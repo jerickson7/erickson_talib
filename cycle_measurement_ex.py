@@ -25,7 +25,7 @@ df.set_index('close_time', inplace=True)
 
 cnp = df['close'].to_numpy()
 
-# Use roofing filter to create "sinewave" with cyclic components with periods. between 10 and 48
+# Use roofing filter to create "sinewave" with cyclic components with periods between 10 and 48
 rf = etalib.eta_roofing_filter(48, 10, cnp)
 rf_norm = etalib.eta_agc(0.995, rf)
 period_out, snr_out, pred_out, spectrum_result = etalib.eta_mem(48, 10, 10, 48, 0.5, 4, rf)
