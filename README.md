@@ -6,9 +6,9 @@ This is a portion of my techincal analysis library.
 Use build.sh to build the extension for use with Python.
 
 Contains 
-John Ehlers indicators such as the decycler, super smoother, bandpass filter, and autocorrelation periodogram.
+John Ehlers filters such as the decycler, super smoother, and bandpass filter
 
-Maximum entropy method. AKA MESA or Burg's method.
+Cycle measurement using an autocorrelation periodogram and the maximum entropy method (AKA MESA or Burg's method).
 
 Maximum likelehood entropy estimator for an abitrary base encoding.
 
